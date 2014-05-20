@@ -1,0 +1,28 @@
+div.table-bordered {
+  border: 1px solid #ddd;
+  font-size: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  display: table;
+}
+
+div.table-bordered > div span {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 400px;
+  vertical-align: middle;
+  line-height: 1.4285;
+  display: table-cell;
+  box-sizing: border-box;
+  position: relative;
+
+}
+div.table-bordered > div {
+  display: table-row;
+  height: 100px;
+  vertical-align: inherit;
+}
+
+div.div-table {
+  width: 100px;
+}
