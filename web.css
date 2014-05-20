@@ -20,6 +20,8 @@ body{
 #fon{
     display: table-cell;
     width: 20%;
+    position:relative;
+    Left:70px;
 }
 #inhalt{
     display: table;
