@@ -47,3 +47,42 @@ body{
     display: table-row;
     margin-top: 50px;
 }
+#css1{
+    display: table; 
+    width: 98%; 
+    margin: auto;
+}
+#css2{
+    display: table-cell; 
+    width: 80%; 
+    text-align: center; 
+    vertical-align: middle ; 
+    font-size: 22px;
+}
+#css3{
+    display: table-cell; 
+    width: 20%;
+}
+#css4{
+    display: table; 
+    width: 98%; 
+    margin: auto; 
+    margin-top: 50px;
+}
+#css5{
+    display: table-row;
+}
+#css6{
+    display: table-cell; 
+    vertical-align: top; 
+    width: 50%;
+    font-size: 16px;
+    color: white;
+}
+#css7{
+    display: table-cell;
+}
+#css8{
+    display: table-row; 
+    margin-top: 50px;
+}
