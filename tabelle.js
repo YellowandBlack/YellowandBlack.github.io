@@ -141,7 +141,7 @@ function createwebtechconTab(){
 }
 
 // erstellung einer Tabelle ohne die Untertabelle mit Messe zu löschen
-function createkostenTab(){
+function TabKosten(){
 
     clear();
     clearRow();
@@ -192,7 +192,7 @@ function clearRow(){
 }
 
 // erweitert die Überschrifttabelle um die Messen
-function extendTab(){
+function TabTeilnehmer(){
 
     clear();
     clearRow();
