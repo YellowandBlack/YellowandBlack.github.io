@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>tableClass</title>
+<script language = "JavaScript" type="text/javascript">
+<!--
+
+// *********** hier sollte der JavaScript-Code des table-Objekts notiert werden ***********
+// *********** wird hier der Uebersichtlichkeit halber weggelassen              ***********
+
+  var meineTabelle = new table('cols="2"','rows="2"','border="1"','bgcolor="#FFFFCC"');
+  meineTabelle.contentArraysToArguments();
+  meineTabelle.content[0][0].value = "<b>Berlin</b>";
+  meineTabelle.content[0][1].value = "<b>Hamburg</b>";
+  meineTabelle.content[1][0].value = "3 Millionen";
+  meineTabelle.content[1][1].value = "2 Millionen";
+  meineTabelle.content[1][1].value = "2 Millionen";
+//-->
+</script>
+</head>
+
+<body>
+<script language="JavaScript" type="text/javascript">
+<!--
+ meineTabelle.contentArgumentsToArrays();
+ document.write(meineTabelle.draw());
+//-->
+</script>
+</body>
+</html>
