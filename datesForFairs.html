@@ -1,0 +1,13 @@
+{
+var CeBit = {
+name:"CeBit",
+kosten:"15"
+}
+var ConHit = {
+name:"ConHit",
+kosten:"50"
+}
+var WebTechCon = {
+name:"WebTechCon",
+kosten:"300"
+}}
