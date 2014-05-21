@@ -5,9 +5,9 @@
 <head>
     <script type=text/javascript src="datesForContributors.js"></script>
     <script type=text/javascript src="datesForFairs.js"></script>
-    <script type=text/javascript src="tabelle.js"></script>
+    <script type=text/javascript src="tabGenerator.js"></script>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="detail.css" type="text/css"/>
+    <link rel="stylesheet" href="css\messe.css" type="text/css"/>
     <title>detail</title>
 </head>
 <body>
@@ -15,8 +15,8 @@
     <div id="1" align="center">
     <table id="mainTable" border="1">
         <tr>
-            <th onclick="javascript:TabKosten()" onmouseover="style.backgroundColor='red'" onmouseout="style.backgroundColor='#99D9EA'">Kosten der Messe</th>
-            <th onclick="javascript:TabTeilnehmer()" onmouseover="style.backgroundColor='red'" onmouseout="style.backgroundColor='#99D9EA'">Teilnehmer</th>
+            <th onclick="javascript:createkostenTab()" onmouseover="style.backgroundColor='red'" onmouseout="style.backgroundColor='#99D9EA'">Kosten der Messe</th>
+            <th onclick="javascript:extendTab()" onmouseover="style.backgroundColor='red'" onmouseout="style.backgroundColor='#99D9EA'">Teilnehmer</th>
 
         </tr>
     </table><br/>
@@ -33,7 +33,7 @@
     
     
  <br/>
-   <a href="index.html">Startseite</a>
+   <a href="index.html"><img src="img/button.jpg"></a>
 
 </body>
 </html>
