@@ -1,48 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <head>
- <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<title>Unbenanntes Dokument</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Mitarbeiter-Tabelle</title>
 <script language="javascript">
 
 function start() {
-    node = document.getElementById("tabelle1");
-    node.parentNode.insertBefore(createTable(3, 3), node );
+    node = document.getElementById("hierTabelle");
+    node.appendChild(createTable());
 }
 
-function createTable(row, col, id) {
+function createTable() {
 
-    var myTable     = document.createElement("table");
-        var mytablebody = document.createElement("tbody");
+	var mitarbeiter = new Array ("Daniel", "Anastasia", "Marvin", "Dominik", "Günther", "Gabriela");
+	var myTable     = document.createElement("table");
+	var mytablebody = document.createElement("tbody");
 
-        for(var j = 0; j < row; j++) {
-            mycurrent_row = document.createElement("tr");
-            for(var i = 0; i < col; i++) {
-                    mycurrent_cell = document.createElement("td");               
-                    currenttext = document.createTextNode("row"+j+", column "+i);
-                    mycurrent_cell.appendChild(currenttext);
-                    mycurrent_row.appendChild(mycurrent_cell);
-            }
-
-            mytablebody.appendChild(mycurrent_row);
-    }
-
-    myTable.appendChild(mytablebody);
-    myTable.setAttribute("ID", id);
-    return myTable;
+	for (var i = 0; mitarbeiter.length > i; i++) {
+		currentRow = document.createElement("tr");
+		currentCell = document.createElement("td");	
+		currentText = document.createTextNode(i+1 + ". " + mitarbeiter[i]);
+		currentCell.appendChild(currentText);
+		currentRow.appendChild(currentCell);
+		mytablebody.appendChild(currentRow);
+	}
+	myTable.appendChild(mytablebody);
+	myTable.setAttribute("border",1);
+	return myTable;
 }
-
-</script>   
-</head>
-
-<body onload="javascript:start()">
-<table width="100" border="0" cellpadding="0" cellspacing="1" id="tabelle1">
-  <tr>
-    <td>Feld 1 </td>
-    <td>Feld 2 </td>
-    <td>Feld 3 </td>
-  </tr>
-</table>
-</body>
-</html>
