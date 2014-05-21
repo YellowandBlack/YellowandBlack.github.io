@@ -14,7 +14,7 @@ head2.appendChild(script2);
 
 
 // erstellung einer Tabelle
-function createcebitTab(){
+function TabKosten(){
 
     clear();
 
