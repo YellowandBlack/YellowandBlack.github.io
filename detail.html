@@ -1,60 +1,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-
-    
- 
 <html>
 
-<head
-      <script type=text/javascript src="datesForContributors.js"></script>
+<head>
+    <script type=text/javascript src="datesForContributors.js"></script>
     <script type=text/javascript src="datesForFairs.js"></script>
     <script type=text/javascript src="tabGenerator.js"></script>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="detail.css" type="text/css"/>
     <title>detail</title>
-  
-
 </head>
 <body>
-
-<h1>Details zur Anmeldung</h1>
-
-
-<body>
-<div id="header">
-    <table border="1">
+    <h1>Details zur Anmeldung</h1>
+    <div id="1" align="center">
+    <table id="mainTable" border="1">
         <tr>
-            <th><button onclick="TabKosten()" onmouseover="style.backgroundColor='red'" onmouseout="style.backgroundColor='#99D9EA'" id="Tab1">Kosten der Messe</th>
-           <th><button onclick="Tabteilnehmer()" onmouseover="style.backgroundColor='red'" onmouseout="style.backgroundColor='#99D9EA'" id="Tab2">Teilnehmer</th>
+            <th onclick="javascript:createkostenTab()" onmouseover="style.backgroundColor='red'" onmouseout="style.backgroundColor='#99D9EA'">Kosten der Messe</th>
+            <th onclick="javascript:extendTab()" onmouseover="style.backgroundColor='red'" onmouseout="style.backgroundColor='#99D9EA'">Teilnehmer</th>
+
         </tr>
-    </table>
-   
- 
-    
+    </table><br/>
+    </div>
 
+    <div>
+        <table align=center id="table" border="1">
 
-</div>
-<br>
-<br>
-<div >
-    <table border="1" id="tabelle">
-        
-    </table>
-    
-    
-    
-    
-</div>
-    
-    
-    
+        </table>
 
+    </div>
 
     
     
- <br>
- <br>
+    
+ <br/>
    <a href="index.html">Startseite</a>
-<br>
+
 </body>
 </html>
