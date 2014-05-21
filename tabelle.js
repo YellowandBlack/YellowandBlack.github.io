@@ -14,7 +14,7 @@ head2.appendChild(script2);
 
 
 // erstellung einer Tabelle
-function TabKosten(){
+function createcebitTab(){
 
     clear();
 
@@ -141,7 +141,7 @@ function createwebtechconTab(){
 }
 
 // erstellung einer Tabelle ohne die Untertabelle mit Messe zu löschen
-function TabKosten(){
+function createkostenTab(){
 
     clear();
     clearRow();
@@ -192,7 +192,7 @@ function clearRow(){
 }
 
 // erweitert die Überschrifttabelle um die Messen
-function TabTeilnehmer(){
+function extendTab(){
 
     clear();
     clearRow();
